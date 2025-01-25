@@ -1,0 +1,124 @@
+.carousel-container {
+  padding: 40px 40px;
+}
+
+.carousel-inner {
+  padding: 10px 10px;
+  margin: 0 20px;
+}
+
+.review-card {
+  border: none;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out; /* Smoother transition */
+}
+
+.review-card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel-indicators button {
+  background-color: #007bff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Add transition effect for carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .review-card {
+    margin-bottom: 15px;
+  }
+
+  .card-img-top {
+    height: 120px; 
+  }
+
+  .no-reviews {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .no-reviews img {
+    max-height: 150px;
+  }
+
+  .no-reviews h3 {
+    font-size: 1.2rem;
+  }
+
+  .no-reviews p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .review-card {
+    margin-bottom: 10px;
+  }
+
+  .card-img-top {
+    height: 100px;
+  }
+
+  .no-reviews {
+    padding: 10px;
+  }
+
+  .no-reviews img {
+    max-height: 120px;
+  }
+
+  .no-reviews h3 {
+    font-size: 1rem;
+  }
+
+  .no-reviews p {
+    font-size: 0.85rem;
+  }
+}
+
+/* New styles for the 'No reviews' section */
+.no-reviews {
+  background-color: #f8d7da;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.no-reviews img {
+  margin-top: 20px;
+  max-height: 200px;
+}
+
+.no-reviews h3 {
+  font-size: 1.5rem;
+  color: #dc3545;
+}
+
+.no-reviews p {
+  font-size: 1rem;
+  color: #6c757d;
+}

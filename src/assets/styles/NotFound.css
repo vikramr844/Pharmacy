@@ -1,0 +1,95 @@
+/* Full viewport height and centering */
+.not-found-container {
+    height: 100vh;
+    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+    text-align: center;
+  }
+  
+  .not-found-content {
+    background-color: #ffffff;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Larger, bolder 404 */
+  h1 {
+    font-size: 10rem;
+    font-weight: 700;
+    color: #dc3545; /* Bright red for emphasis */
+    animation: bounceIn 1s ease-in-out;
+  }
+  
+  /* Subtle animation for the message */
+  p {
+    font-size: 1.25rem;
+    color: #6c757d;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  /* Button with hover effect */
+  .btn-lg {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn-lg:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .not-found-content {
+      padding: 30px 20px;
+    }
+  
+    h1 {
+      font-size: 6rem;
+    }
+  
+    .btn-lg {
+      font-size: 1rem;
+    }
+  }
+  

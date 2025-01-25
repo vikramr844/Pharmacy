@@ -1,0 +1,52 @@
+/* Style the contact us container */
+.contact-us-container {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+  }
+  
+  /* Title styling */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Add some margin for text under title */
+  .lead {
+    margin-bottom: 30px;
+  }
+  
+  /* Form styling */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  input,
+  textarea {
+    border-radius: 8px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  /* Button styling */
+  .btn {
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  
+  /* For smaller screens (e.g., mobile), make the button larger and full-width */
+  @media (max-width: 767px) {
+    .form-control {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    .btn {
+      font-size: 1.2rem;
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,22 @@
+/* General spacing for components */
+.component-spacing {
+    margin-top:7%;
+    margin-bottom: 2rem; 
+}
+.offer-banner{
+   margin-left: 20%;
+}
+/* Fine-tuning for smaller screens */
+@media (max-width: 768px) {
+    
+    .component-spacing {
+        margin-bottom: 1.5rem; 
+    }
+}
+
+@media (max-width: 576px) {
+
+    .component-spacing {
+        margin-bottom: 1rem; 
+    }
+}
