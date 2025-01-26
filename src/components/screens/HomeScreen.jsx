@@ -9,7 +9,7 @@ const HomeScreen = () => {
     return (
         <main className="w-full">
             {/* Banner Section */}
-            <div className="py-5">
+            <div className="">
                 <Banner />
             </div>
 
