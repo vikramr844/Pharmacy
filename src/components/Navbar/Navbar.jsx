@@ -104,7 +104,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {mobileNav && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-lg transition-all z-40">
-          <ul className="d-flex flex-column align-items-start px-4 py-4 space-y-2">
+          <ul className="d-flex text-decoration-none flex-column align-items-start px-4 py-4 space-y-2">
             {menu.map((item) => (
               <li key={item.id} className="w-full">
                 <NavLink
