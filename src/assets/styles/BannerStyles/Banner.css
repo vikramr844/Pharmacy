@@ -1,7 +1,7 @@
 /* Overall container styles */
 .banner-container {
     width: 100%;
-    padding: 5rem 2rem;
+    padding: 0 2rem;
     
     background: linear-gradient(to right, #e3f2fd, #bbdefb);
     overflow: hidden;
